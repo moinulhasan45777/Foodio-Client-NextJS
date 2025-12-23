@@ -3,9 +3,10 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div className="relative">
+    <div className="relative mb-[9.6875rem]">
       <div className="absolute -top-30.5 -right-25 z-0 w-152 h-141 bg-[#FEF7EA] rounded-bl-[13.125rem] flex">
         <Image
+          loading="eager"
           src={bannerPlate}
           alt="Plate with Food"
           className="w-118.5 h-118.5 mt-auto self-end"
