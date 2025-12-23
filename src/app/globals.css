@@ -5,11 +5,15 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-manrope);
-  --font-serif: var(--font-cormorant);
+  --font-manrope: var(--font-manrope);
+  --font-cormorant: var(--font-cormorant);
 }
 
 body {
-  padding: 0 6.25rem 0 6.25rem;
+  margin: 0 6.25rem 0 6.25rem;
   font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  font-family: var(--font-cormorant), Arial, Helvetica, sans-serif;
 }

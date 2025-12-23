@@ -40,7 +40,7 @@ export default function Navbar() {
     </>
   );
   return (
-    <div className="flex justify-between items-center h-16">
+    <nav className="flex justify-between items-center h-16">
       {/* Logo */}
       <svg
         className="h-6.5"
@@ -96,6 +96,6 @@ export default function Navbar() {
           />
         </svg>
       </button>
-    </div>
+    </nav>
   );
 }
