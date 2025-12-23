@@ -42,7 +42,7 @@ export default function Banner() {
           ingredients, exquisite recipes, delivered to your door.
         </p>
         <div className="flex items-center gap-4">
-          <button className="bg-[#1a3c34] w-35 text-white py-3  rounded-l-[20px] rounded-br-[20px] flex justify-center items-center gap-2.5 cursor-pointer shadow-[0px_20px_25px_rgba()]">
+          <button className="bg-[#1a3c34] w-35 text-white py-3  rounded-l-[20px] rounded-br-[20px] flex justify-center items-center gap-2.5 cursor-pointer shadow-[0px_20px_25px_rgba(26,60,52,0.3)]">
             <span className="text-base font-semibold">Order Now</span>
             <svg
               className="w-2.5 h-2.5"
