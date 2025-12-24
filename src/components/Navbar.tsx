@@ -21,12 +21,12 @@ export default function Navbar() {
       </Link>
       <li
         className={`py-1.5 px-3 ${
-          pathName == "/food-menu"
+          pathName == "/menu"
             ? "text-[#1A3C34] border border-[#1A3C34] rounded-full bg-[#FEF7EA] cursor-default"
             : ""
         }`}
       >
-        <Link href="/food-menu">Food Menu</Link>
+        <Link href="/menu">Food Menu</Link>
       </li>
       <li
         className={`py-1.5 px-3 ${
@@ -40,7 +40,7 @@ export default function Navbar() {
     </>
   );
   return (
-    <nav className="flex justify-between items-center h-16 mb-14.5">
+    <nav className="flex justify-between items-center h-16">
       {/* Logo */}
       <Link href="/">
         <svg

@@ -9,7 +9,7 @@ export default function DishCard() {
         alt="Golden Crucn Bites Dish"
         className="absolute -top-15 -left-40 max-w-110 min-w-110"
       ></Image>
-      <button className="absolute right-0 top-full translate-y-[-50%] bg-[#1a3c34] w-35 text-white py-3  rounded-l-[20px] rounded-br-[20px] flex justify-center items-center gap-2.5 cursor-pointer shadow-[0px_20px_25px_rgba(26,60,52,0.3)]">
+      <button className="absolute right-0 top-full translate-y-[-50%] bg-[#1a3c34] w-35 text-white py-3  rounded-l-[20px] rounded-br-[20px] flex justify-center items-center gap-2.5 cursor-pointer ">
         <span className="text-base font-semibold">Order Now</span>
         <svg
           width="16"
@@ -21,9 +21,9 @@ export default function DishCard() {
           <path
             d="M8.00001 3.33337V12.6667M3.33334 8.00004H12.6667"
             stroke="white"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </button>

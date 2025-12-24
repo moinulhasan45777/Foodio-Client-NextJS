@@ -10,7 +10,7 @@ export default function CuratedCategories() {
         Explore our diverse menu of culinary delights.{" "}
       </p>
       <div className="flex justify-center items-center gap-4.5 mb-37.5">
-        <button className="bg-[#FEF7EA] shadow-sm w-53.75 py-5 flex flex-col gap-4.5 justify-center items-center">
+        <button className="bg-[#FEF7EA] shadow-sm w-53.75 py-5 flex flex-col gap-4.5 justify-center items-center cursor-pointer">
           <div className="w-13.5 h-13.5 rounded-full bg-[#1a3c34] flex justify-center items-center ">
             <svg
               width="22"
@@ -30,7 +30,7 @@ export default function CuratedCategories() {
           </div>
           <span className="text-lg font-semibold text-center">Starters</span>
         </button>
-        <button className="  w-53.75 py-5 flex flex-col gap-4.5 justify-center items-center">
+        <button className="  w-53.75 py-5 flex flex-col gap-4.5 justify-center items-center cursor-pointer">
           <div className="w-13.5 h-13.5 rounded-full bg-[#1a3c34] flex justify-center items-center ">
             <svg
               width="19"
@@ -50,7 +50,7 @@ export default function CuratedCategories() {
             Main Courses
           </span>
         </button>
-        <button className="  w-53.75 py-5 flex flex-col gap-4.5 justify-center items-center">
+        <button className="  w-53.75 py-5 flex flex-col gap-4.5 justify-center items-center cursor-pointer">
           <div className="w-13.5 h-13.5 rounded-full bg-[#1a3c34] flex justify-center items-center ">
             <svg
               width="24"
