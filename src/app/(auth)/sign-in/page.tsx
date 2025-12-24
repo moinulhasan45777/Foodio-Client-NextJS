@@ -1,50 +1,11 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
-export default function Navbar() {
-  const pathName = usePathname();
-
-  const links = (
-    <>
-      <Link href="/">
-        <li
-          className={`py-1.5 px-3 ${
-            pathName == "/"
-              ? "text-[#1A3C34] border border-[#1A3C34] rounded-full bg-[#FEF7EA] cursor-default"
-              : ""
-          }`}
-        >
-          Home
-        </li>
-      </Link>
-      <li
-        className={`py-1.5 px-3 ${
-          pathName == "/menu"
-            ? "text-[#1A3C34] border border-[#1A3C34] rounded-full bg-[#FEF7EA] cursor-default"
-            : ""
-        }`}
-      >
-        <Link href="/menu">Food Menu</Link>
-      </li>
-      <li
-        className={`py-1.5 px-3 ${
-          pathName == "/my-orders"
-            ? "text-[#1A3C34] border border-[#1A3C34] rounded-full bg-[#FEF7EA] cursor-default"
-            : ""
-        }`}
-      >
-        <Link href="/my-orders">My Orders</Link>
-      </li>
-    </>
-  );
+export default function SignIn() {
   return (
-    <nav className="flex justify-between items-center h-16">
-      {/* Logo */}
-      <Link href="/">
+    <div className="min-h-[calc(100vh-64px)] flex items-center justify-center">
+      <div className="w-md px-6 pt-11 pb-6 border border-[#e6e2d8] rounded-xl shadow-md">
         <svg
-          className="h-6.5"
+          className="h-6.5 mb-3 mx-auto"
           width="107"
           height="26"
           viewBox="0 0 107 26"
@@ -71,34 +32,53 @@ export default function Navbar() {
             </clipPath>
           </defs>
         </svg>
-      </Link>
-      {/* Nav Links */}
-      <ul className="flex z-1 justify-center items-center gap-2 text-[#7a7a7a] text-sm leading-5 font-medium tracking-[-0.15px] ">
-        {links}
-      </ul>
-      <Link
-        href="/sign-in"
-        className="text-white z-1 font-semibold text-sm flex justify-center items-center gap-2 bg-[#1A3C34] px-4 py-[0.40625rem] rounded-full cursor-pointer
-      "
-      >
-        <span>Sign in</span>
-        <svg
-          className="w-2.5 h-2.5"
-          width="11"
-          height="11"
-          viewBox="0 0 11 11"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0.800049 5.46665H10.1334M10.1334 5.46665L5.46672 0.799988M10.1334 5.46665L5.46672 10.1333"
-            stroke="white"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        <p className="text-center text-sm font-medium leading-6 tracking-[-0.31px] mb-2.5 text-[#7a7a7a]">
+          Premium flavors, delivered.
+        </p>
+        <div className="bg-[#f2efe9] w-full h-9 rounded-2xl grid grid-cols-2 p-1 mb-8">
+          <button className="h-full w-full bg-white rounded-full font-medium text-sm leading-5 tracking-[-0.15px]">
+            Sign in
+          </button>
+          <Link
+            href="/register"
+            className="h-full w-full font-medium text-sm leading-5 tracking-[-0.15px] flex items-center justify-center"
+          >
+            Register
+          </Link>
+        </div>
+        <form encType="application/x-www-form-urlencoded">
+          <div className="flex flex-col gap-2 mb-4">
+            <label className="font-medium text-sm leading-3.5 tracking-[-0.15px] ">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+              className="text-sm leading-[100%] tracking-[-0.15px] px-3 py-2 border border-[#e6e2d8] rounded-md"
+            ></input>
+          </div>
+          <div className="flex flex-col gap-2 mb-4">
+            <label className="font-medium text-sm leading-3.5 tracking-[-0.15px] ">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              className="text-sm leading-[100%] tracking-[-0.15px] px-3 py-2 border border-[#e6e2d8] rounded-md"
+            ></input>
+          </div>
+          <input
+            type="submit"
+            id="submit"
+            name="submit"
+            value="Sign In"
+            className="bg-[#1a3c34] text-white font-medium text-sm leading-5 tracking-[-0.15px] w-full py-2 rounded-full cursor-pointer"
           />
-        </svg>
-      </Link>
-    </nav>
+        </form>
+      </div>
+    </div>
   );
 }

@@ -28,9 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${cormorant.variable} ${manrope.variable} antialiased`}>
-        <Navbar></Navbar>
-        <main className="min-h-[calc(100vh-122px)]">{children}</main>
-        <Footer></Footer>
+        {children}
       </body>
     </html>
   );
