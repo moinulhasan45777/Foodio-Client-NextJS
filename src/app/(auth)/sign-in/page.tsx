@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function SignIn() {
   return (
-    <div className="min-h-[calc(100vh-64px)] flex items-center justify-center">
-      <div className="w-md px-6 pt-11 pb-6 border border-[#e6e2d8] rounded-xl shadow-md">
+    <div className="min-h-[calc(100vh-64px)] flex flex-col justify-center">
+      <div className="w-md px-6 pt-11 pb-6 border border-[#e6e2d8] mx-auto rounded-xl shadow-md mb-3.5">
         <svg
           className="h-6.5 mb-3 mx-auto"
           width="107"
@@ -78,6 +78,33 @@ export default function SignIn() {
             className="bg-[#1a3c34] text-white font-medium text-sm leading-5 tracking-[-0.15px] w-full py-2 rounded-full cursor-pointer"
           />
         </form>
+      </div>
+      <div className="flex items-center gap-1 w-md mx-auto">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clipPath="url(#clip0_51_6033)">
+            <path
+              d="M7.99992 10.6667V8.00004M7.99992 5.33337H8.00659M14.6666 8.00004C14.6666 11.6819 11.6818 14.6667 7.99992 14.6667C4.31802 14.6667 1.33325 11.6819 1.33325 8.00004C1.33325 4.31814 4.31802 1.33337 7.99992 1.33337C11.6818 1.33337 14.6666 4.31814 14.6666 8.00004Z"
+              stroke="#757575"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_51_6033">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <p className="font-medium text-sm leading-4 tracking-[-0.31px] text-[#7a7a7a] ">
+          For accessing Admin Panel press A from your keyboard.
+        </p>
       </div>
     </div>
   );
